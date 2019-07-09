@@ -1,2 +1,8 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+<h1> This is the page for <%=@item.name%>. </h1>
+<ul>The Price is: $<%= @item.price %></ul>
+<ul>The Description is: <%= @item.description %></ul>
+<img src=<%=@item.image%> 
+    class="w3-round"
+    alt="This is a basic table."
+    width="300"
+    height="341">
