@@ -36,7 +36,7 @@ private
         @user = User.find(params[:id])
     end
     def allowed_params
-        params.require(:user).params(:first_name, :last_name, :email, :phone_number, :payment_info)
+        params.require(:user).permit(:first_name, :last_name, :email, :phone_number, :payment_info)
     end
 
 end

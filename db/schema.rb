@@ -59,8 +59,8 @@ ActiveRecord::Schema.define(version: 2019_07_09_215332) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.integer "phone_number"
-    t.integer "payment_info"
+    t.string "phone_number"
+    t.string "payment_info"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
