@@ -1,4 +1,8 @@
  <h2>Login</h2>
+ 
+ <% if @error %>
+    <p style="color: red;"> <%= @error %> </p>
+ <% end %>
 
  <%= form_for @user, url: {controller: "sessions", action: "create"} do |f| %>
  <%= f.label :username %>

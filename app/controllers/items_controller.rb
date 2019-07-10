@@ -1,8 +1,8 @@
 class ItemsController < ApplicationController
   before_action :find, only: [:show, :edit, :update, :delete]
     def index
-      @items = Item.all
-  end
+      @items = Item.all 
+    end
 
   def create
       new
