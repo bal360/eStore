@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <h1>The eStore</h1>
+    <nav>
+      <li><%= link_to "User Profile", users_path %></li> 
+      <li><%= link_to "Items", items_path %></li>
+      <li><%= link_to "Cart", carts_path %></li>
+      <li><%= link_to "Signup", signup_path %></li>
+      <li><%= link_to "Login", login_path %></li>
+    </nav>
     <%= yield %>
   </body>
 </html>

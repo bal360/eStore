@@ -10,5 +10,13 @@
         <%= f.text_field :phone_number%>
         <%=f.label :payment_info%>
         <%= f.text_field :payment_info%>
-        <%=f.submit%>
+        
+        <%=f.label :username%>
+        <%= f.text_field :username%>
+        
+        <%=f.label :password%>
+        <%= f.password_field :password%>
+
+
+        <%=f.submit "Create eStore Account" %>
     <% end %>

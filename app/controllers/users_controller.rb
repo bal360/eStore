@@ -14,7 +14,7 @@ before_action :find, only: [:show, :edit, :update, :delete]
     def create
         @user = User.new(allowed_params)
         if @user.save
-            redirect_to user_path(@user)
+            redirect_to items_path
         else 
             render :new
         end
@@ -36,7 +36,7 @@ private
         @user = User.find(params[:id])
     end
     def allowed_params
-        params.require(:user).permit(:first_name, :last_name, :email, :phone_number, :payment_info)
+        params.require(:user).permit(:first_name, :last_name, :username, :email, :phone_number, :payment_info, :password)
     end
 
 end
