@@ -1,8 +1,18 @@
-<h1> This is the page for <%=@item.name%>. </h1>
-<ul>The Price is: $<%= @item.price %></ul>
-<ul>The Description is: <%= @item.description %></ul>
+<h1> <%=@item.name%> </h1>
 <img src=<%=@item.img_url%> 
     class="w3-round"
     alt="This is a basic table."
     width="300"
     height="341">
+<ul>The Price is: $<%= @item.price %></ul>
+<ul>The Description is: <%= @item.description %></ul>
+
+<%= form_for @item do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  
+
+
+  <%= f.submit "Add Item" %>
+
+<% end %>

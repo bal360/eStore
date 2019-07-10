@@ -10,6 +10,7 @@ class ItemsController < ApplicationController
   end
 
   def show
+    find
   end
 
   def edit
@@ -21,6 +22,7 @@ class ItemsController < ApplicationController
   def new
       @item = Item.new
   end
+  
 
 private
 

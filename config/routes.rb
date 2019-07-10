@@ -1,15 +1,14 @@
 Rails.application.routes.draw do
-  get 'reviews/new'
-  get 'reviews/index'
-  get 'reviews/show'
-  get 'favorites/new'
-  get 'favorites/index'
-  get 'favorites/show'
   resources :carts
   resources :favorites
   resources :items
   resources :users
   resources :reviews
+  
+  get "signup", to: "users#new"
+  
+  get "login", to: "sessions#new"
+  post "login", to: "sessions#create"
 
   root 'welcome#index'
   
