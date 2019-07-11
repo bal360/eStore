@@ -1,0 +1,7 @@
+<h1> This is the Stupid Cart! </h1>
+<% @stupid_cart.each do |cart| %>
+    <img src= <%= cart.item.img_url %>/ width="50" height="91"></li>
+    <%= cart.item.name %>
+    <%= cart.item.price %>
+    <button><%= link_to "Write a Review",  new_review_path(@review)%></button>
+<%end%>

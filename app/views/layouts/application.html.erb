@@ -16,7 +16,7 @@
         <li><%= link_to "Items", items_path %></li>
           <% if @user && @user.id %>
           <li><%= link_to "User Profile", user_path(@user) %></li> 
-          <li><%= link_to "Cart", carts_path(@cart) %></li>
+          <li><%= link_to "Cart", "stupidcart" %></li>
           <li><%= link_to "Logout", login_path, method: :delete %></li>
         <% else %>
           <li><%= link_to "Signup", signup_path %></li>

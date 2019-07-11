@@ -37,6 +37,11 @@ class CartsController < ApplicationController
     def delete
     end
 
+    def cart
+        @stupid_cart= Cart.where(:user_id => @user.id)
+        render "stupidcart"
+    end
+
     private
 
     def find

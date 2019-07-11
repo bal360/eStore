@@ -14,6 +14,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
+    new
      @review = Review.create(allowed_params)
      redirect_to carts_path(@cart)
   end
