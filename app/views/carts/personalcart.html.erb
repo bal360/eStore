@@ -1,8 +1,11 @@
 <h1> These are the items currently in your cart: </h1>
-<% @personalcart.each do |cart| %>
-    <img src= <%= cart.item.img_url %>/ width="50" height="91"></li>
-    <%= cart.item.name %>
-    <%= cart.item.price %>
+<% @personalcart.each do |product| %>
+    <img src= <%= product.item.img_url %>/ width="50" height="91"></li>
+    <%= product.item.name %>
+    <%= product.item.price %>
     <button><%= link_to "Write a Review",  new_review_path(@review)%></button>
+    
+    <button><%= link_to "Delete Item",  cart_path(product), method: :delete %></button>
+
+
 <%end%>
-<button><%= link_to "Delete Item",  carts_path%></button>
