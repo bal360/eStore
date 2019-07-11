@@ -14,7 +14,7 @@ before_action :find, only: [:show, :edit, :update, :delete]
     def create
         @user = User.new(allowed_params)
         if @user.save
-            redirect_to items_path
+            redirect_to login_path
         else 
             render :new
         end
