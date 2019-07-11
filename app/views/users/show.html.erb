@@ -1,7 +1,7 @@
 <h1> Your Profile: </h1> 
 
-<%= @user.first_name %></h1>
-<%= @user.last_name %></h1>
-<%= @user.email %></h1>
-<%= @user.phone_number %></h1>
-<%= @user.payment_info %></h1>
+<ul> First Name: <%= @user.first_name %></ul>
+<ul> Last Name: <%= @user.last_name %></ul>
+<ul> Email: <%= @user.email %></ul>
+<ul> Phone Number: <%= @user.phone_number %></ul>
+<button><%= link_to "Update Profile",  edit_user_path(@user)%></button>

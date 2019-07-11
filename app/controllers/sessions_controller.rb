@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id
             redirect_to items_path
         else 
+            @user = User.new
             @error = "Incorrect Login Credentials"
             render "login/login"
         end

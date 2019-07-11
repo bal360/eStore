@@ -31,6 +31,7 @@ before_action :find, only: [:show, :edit, :update, :delete]
         end
     end
 
+
 private
     def find
         @user = User.find(params[:id])

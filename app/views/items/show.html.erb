@@ -10,5 +10,5 @@
 <%= form_for @cart do |f| %>
     <%= f.hidden_field :item_id, value: @item.id %>
     <%= f.hidden_field :user_id, value: @user.id %>
-    <%= f.submit %>
+    <%= f.submit "Add to Cart"%>
 <% end %>

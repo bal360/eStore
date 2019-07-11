@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :reviews
   
   get "signup", to: "users#new"
+  get "/personalcart", to: "carts#cart"
   
   get "login", to: "sessions#new"
   post "login", to: "sessions#create"
