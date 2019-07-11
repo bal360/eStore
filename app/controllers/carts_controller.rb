@@ -35,6 +35,9 @@ class CartsController < ApplicationController
     end
 
     def delete
+        find
+        @cart.destroy
+        redirect_to personalcart_path
     end
 
     def cart
