@@ -1,22 +1,16 @@
 <h1> Create a new User: </h1>
-    <%= form_for @user do |f|%>
-        <%=f.label :first_name%>
-        <%= f.text_field :first_name %>
-        <%=f.label :last_name%>
-        <%= f.text_field :last_name%>
-        <%=f.label :email%>
-        <%= f.text_field :email%>
-        <%=f.label :phone_number%>
-        <%= f.text_field :phone_number%>
-        <%=f.label :payment_info%>
-        <%= f.text_field :payment_info%>
-        
-        <%=f.label :username%>
-        <%= f.text_field :username%>
-        
-        <%=f.label :password%>
-        <%= f.password_field :password%>
-
-
-        <%=f.submit "Create eStore Account" %>
-    <% end %>
+    <ul><%= form_for @user do |f|%>
+        <ul><%=f.label :first_name%></ul>
+        <ul> <%= f.text_field :first_name %></ul>
+        <ul><%=f.label :last_name%></ul>
+        <ul><%= f.text_field :last_name%></ul>
+        <ul><%=f.label :email%></ul>
+        <ul><%= f.text_field :email%></ul>
+        <ul><%=f.label :phone_number%></ul>
+        <ul><%= f.text_field :phone_number%></ul>
+        <ul><%=f.label :username%></ul>
+        <ul><%= f.text_field :username%></ul>
+        <ul><%=f.label :password%>
+        <ul><%=f.password_field :password%></ul>
+        <ul><%=f.submit "Create eStore Account" %></ul>
+    <% end %></ul>
