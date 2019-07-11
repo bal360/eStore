@@ -10,6 +10,7 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @cart = Cart.new
     find
   end
 

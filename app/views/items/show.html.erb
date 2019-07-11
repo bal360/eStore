@@ -7,12 +7,8 @@
 <ul>The Price is: $<%= @item.price %></ul>
 <ul>The Description is: <%= @item.description %></ul>
 
-<%= form_for @item do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  
-
-
-  <%= f.submit "Add Item" %>
-
+<%= form_for @cart do |f| %>
+    <%= f.hidden_field :item_id, value: @item.id %>
+    <%= f.hidden_field :user_id, value: @user.id %>
+    <%= f.submit %>
 <% end %>

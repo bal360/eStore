@@ -6,6 +6,7 @@ class CartsController < ApplicationController
     end
 
     def show
+        @cart = Cart.find(params[:id])
     end
 
     def new
@@ -14,6 +15,7 @@ class CartsController < ApplicationController
 
     def create
         @cart = Cart.new(allowed_params)
+        @cart.user_id = @user.id
         if @cart.save
             redirect_to items_path
         else 
@@ -37,8 +39,12 @@ class CartsController < ApplicationController
 
     private
 
+    def find
+        @cart = Cart.find(params[:id])
+    end
+
     def allowed_params
-        param.require(:cart).permit(:user_id, :item_id)
+        params.require(:cart).permit(:user_id, :item_id)
     end
 
 end
