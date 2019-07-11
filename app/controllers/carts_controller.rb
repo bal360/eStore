@@ -38,7 +38,7 @@ class CartsController < ApplicationController
     end
 
     def cart
-        @stupid_cart= Cart.where(:user_id => @user.id)
+        @personalcart= Cart.where(:user_id => @user.id)
         render "carts/personalcart"
     end
 

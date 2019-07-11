@@ -6,6 +6,9 @@
     <%= f.label :rating %>
     <%= f.select :rating, [[1,1], [2,2], [3,3], [4,4], [5,5]] %>
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
+    <%=  f.collection_select :item_id, Item.all, :id, :name %>
+    <%=  f.hidden_field :user_id, value: @user.id %>
+
     <%= f.submit%>
 <%end%>
