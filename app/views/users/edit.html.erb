@@ -1,0 +1,16 @@
+<h1> Hi <%= @user.username%>, here is your info to update: </h1>
+    <ul><%= form_for @user do |f|%>
+        <ul><%=f.label :first_name%></ul>
+        <ul> <%= f.text_field :first_name %></ul>
+        <ul><%=f.label :last_name%></ul>
+        <ul><%= f.text_field :last_name%></ul>
+        <ul><%=f.label :email%></ul>
+        <ul><%= f.text_field :email%></ul>
+        <ul><%=f.label :phone_number%></ul>
+        <ul><%= f.text_field :phone_number%></ul>
+        <ul><%=f.label :username%></ul>
+        <ul><%= f.text_field :username%></ul>
+        <ul><%=f.label :password%>
+        <ul><%=f.password_field :password%></ul>
+        <ul><%=f.submit "Update eStore Account" %></ul>
+    <% end %></ul>
