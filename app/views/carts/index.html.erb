@@ -1,0 +1,9 @@
+<ol><% @carts.each do |p| %>
+   <li><img src=  <%=p.item.img_url%> width="50" height="91"></li>
+        <%= p.item.name %>
+        <br><%= p.item.price %><br>
+        <%= link_to "Write a Review",  new_review_path(@review)%>
+</ol>
+    <br><% end %><br>
+
+   

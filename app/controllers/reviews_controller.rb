@@ -14,8 +14,8 @@ class ReviewsController < ApplicationController
   end
 
   def create
-      find
-      @review.create(allowed_params)
+     @review = Review.create(allowed_params)
+     redirect_to carts_path(@cart)
   end
 
 private
@@ -24,6 +24,6 @@ private
   end
 
   def allowed_params
-      params.require(:review).permit(:rating, :title, :description)
+      params.require(:review).permit(:rating, :title, :description, :user_id, :item_id)
   end
 end
