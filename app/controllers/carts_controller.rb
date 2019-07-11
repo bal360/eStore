@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-    before_action :find, only: [:show, :edit, :update, :delete]
+    before_action :find, only: [:show, :edit, :update, :destroy]
 
     def index
         @carts = Cart.all
@@ -34,11 +34,13 @@ class CartsController < ApplicationController
         end
     end
 
-    def delete
+    def destroy
+        @cart.destroy
+        redirect_to personalcart_path
     end
 
     def cart
-        @stupid_cart= Cart.where(:user_id => @user.id)
+        @personalcart = Cart.where(:user_id => @user.id)
         render "carts/personalcart"
     end
 
