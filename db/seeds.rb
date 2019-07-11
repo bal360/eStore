@@ -47,3 +47,9 @@ Item.create(name: "Gold Armour 17Pcs Camping Cookware Mess Kit ", price: 35, qua
 Item.create(name: "Bulin 13 Piece Camping Cookware Mess Kit", price: 50, quantity: 15, img_url: "https://images-na.ssl-images-amazon.com/images/I/61AVNiLz9dL._SL1001_.jpg", description: "Bulin's 13 piece mess kit has everything you need and packs up into a small bag that makes it perfect even for those long-haul backpacking trips.")
 
 Item.create(name: "überleben Hexå Fire Starter", price: 24, quantity: 15, img_url: "https://images-na.ssl-images-amazon.com/images/I/71b8YuaFKvL._SL1500_.jpg", description: "The hexagonal shape of this firestarter makes it more durable, and last longer, than the traditional spherical shaped firestarters. The flat profile also provides more surface area for better striking.")
+
+Item.create(name: "Fire Starter Squares", price: 15, quantity: 30, img_url: "https://images-na.ssl-images-amazon.com/images/I/811sAR%2BgyrL._SL1250_.jpg", description: "Eco-friendly 100% natural wood wax fire-starters")
+
+Item.create(name: "Fire Starters box", price: 35, quantity: 35, img_url: "https://images-na.ssl-images-amazon.com/images/I/71SWxCn-WiL._SL1134_.jpg", description: "This fire-starter box contains wood sticks, eco-friendly wood and wax cubes and fatwood sticks.")
+
+Item.create(name: "100% All Natural Charcoal Fire Starters", price: 15, quantity: 68, img_url: "https://images-na.ssl-images-amazon.com/images/I/71dkn6LUBFL._SL1500_.jpg", description: "These firestarter bundles are eco-friednly and waterproof - ensuring you get a fire going no water the weather. Great for emergency kits.")
