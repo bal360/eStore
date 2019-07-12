@@ -1,13 +1,13 @@
 <h1> Write a Review:</h1>
 
-<form><%=form_for @review do |f| %>
-    <label><%= f.label :title %><label/>
-    <label><%= f.text_field :title %><label/>
-    <label><%= f.label :rating %><label/>
-    <label><%= f.select :rating, [[1,1], [2,2], [3,3], [4,4], [5,5]] %><label/>
-    <label><%= f.label :description %><label/>
-    <label><%= f.text_area :description %><label/>
-    <label><%=  f.collection_select :item_id, Item.all, :id, :name %><label/>
+<%= form_for @review do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :rating %>
+    <%= f.select :rating, [[1,1], [2,2], [3,3], [4,4], [5,5]] %>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <%=  f.collection_select :item_id, Item.all, :id, :name %>
            <%=  f.hidden_field :user_id, value: @user.id %>
-    <%= f.submit%><form><label/>
+           <%= f.submit%>
 <%end%>
