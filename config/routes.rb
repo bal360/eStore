@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :admin
   resources :carts
   resources :favorites
   resources :items
@@ -8,11 +9,12 @@ Rails.application.routes.draw do
   get "signup", to: "users#new"
   get "/personalcart", to: "carts#cart"
   
-  delete '/personalcart/:id', to: 'carts#destroy'
-  
-  delete '/personalcart/:cart_id/:item_id', to: 'carts#itemdestroy'
+  #delete '/personalcart/:id', to: 'carts#destroy'
 
+  delete '/personalcart/:id', to: 'carts#checkout'
   
+  #delete '/personalcart/:cart_id/:item_id', to: 'carts#itemdestroy'
+
   get "login", to: "sessions#new"
   post "login", to: "sessions#create"
   delete "login", to: "sessions#destroy"

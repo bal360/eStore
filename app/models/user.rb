@@ -10,4 +10,17 @@ class User < ApplicationRecord
         self.first_name + " " + self.last_name
     end
 
+    def self.username_sort
+        ord_usr = User.order(:username)
+    end
+
+    def self.firstname_sort
+        ord_usr = User.order(:first_name)
+    end
+
+
+    def self.lastname_sort
+        ord_usr = User.order(:last_name)
+    end
+
 end

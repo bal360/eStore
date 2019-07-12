@@ -22,7 +22,8 @@
           <a class="nav-item nav-link" href="<%= "/personalcart" %>">Cart</a>
           <a class="nav-item nav-link" href="<%= user_path(@user) %>">Profile</a>
           <a class="nav-item nav-link" href="<%= login_path method: :delete %>">LogOut</a>
-        <% else %>
+          <a class="nav-item nav-link" href="<%= review_path(@user) %>">Reviews</a>
+      <% else %>
           <a class="nav-item nav-link" href="<%= signup_path %>">SignUp</a>
           <a class="nav-item nav-link" href="<%= login_path %>">Login</a>
         <% end %>
