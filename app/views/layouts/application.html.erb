@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <a class="navbar-brand" href="#">Camping GearUp</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +21,7 @@
         <% if @user && @user.id %>
           <a class="nav-item nav-link" href="<%= items_path %>">Gear</a>
           <a class="nav-item nav-link" href="<%= "/personalcart" %>">Cart</a>
+          <a class="nav-item nav-link" href="<%= review_path(@user) %>">Reviews</a>
           <a class="nav-item nav-link" href="<%= user_path(@user) %>">Profile</a>
           <a class="nav-item nav-link" href="<%= login_path method: :delete %>">LogOut</a>
         <% else %>
