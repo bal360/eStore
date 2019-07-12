@@ -56,7 +56,7 @@ class CartsController < ApplicationController
         render "carts/personalcart"
     end
 
-    private
+private
 
     def find
         @cart = Cart.find(params[:id])
