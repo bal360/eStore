@@ -1,4 +1,4 @@
-<h1> Hi <%= @user.username%>, here is your info to update: </h1>
+<h1> Hi <%= @user.first_name%>, here is your info to update: </h1>
     <ul><%= form_for @user do |f|%>
         <ul><%=f.label :first_name%></ul>
         <ul> <%= f.text_field :first_name %></ul>

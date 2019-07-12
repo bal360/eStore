@@ -1,4 +1,4 @@
-<h1>Hi <%= @user.username%>, here are all of the reviews: </h1>
+<h1>Hi <%= @user.first_name%>, here are all of the reviews: </h1>
 
 <%  @reviews.each do |review| %>
     <%= review.title %>

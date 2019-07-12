@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :find, only: [:show, :edit, :update, :delete]
+  before_action :find, only: [ :edit, :update, :delete]
 
   def index 
       @reviews = Review.all
@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
   end
 
   def show
-      find
+    @reviews = Review.where(:user_id => @user.id)
   end
 
   def create
