@@ -14,4 +14,14 @@ class Item < ApplicationRecord
        all_item_prices.sum / all_item_prices.count
     end
 
+    def self.total_inventory_assets
+        all_item_prices.total 
+    end
+
+    def self.total_inventory
+        self.all.collect do |item|
+            item.quantity
+        end
+    end
+
 end
