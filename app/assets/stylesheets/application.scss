@@ -64,6 +64,21 @@ ul {
     background-color: burlywood;
   }
 
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+
   
   
 input[type=submit] {
@@ -78,7 +93,7 @@ input[type=submit]:hover {
 }
 
 button {
-    background-color: #F0B0AE;
+    background-color: rgb(158, 140, 139);
     color: #FFFFFF;
     font-weight: bold;
 }

@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <h1> Gear Here </h1>
+        
         <form action="/items" method="get">
             <label>Search</label>
             <input type="text" name="search" />
@@ -10,13 +11,12 @@
         <div class="grid-container">
             <% @items.each do |item|%>
                 <div class="grid-item"><img src=<%=item.img_url%>
-                    class="w3-round"
-                    alt="This is a basic table."
-                    width="150"
-                    height="191">
-                    <ul><%= link_to item.name, item_path(item), {:style=>'color:#FFFFFF;', :class => "css_class"} %>
-                </div></ul>
-            <%end%>
+                        class="w3-round"
+                        alt="This is a basic table."
+                        width="150"
+                        height="191">
+                        <ul><%= link_to item.name, item_path(item), {:style=>'color:#FFFFFF;', :class => "css_class"} %></div></ul>
+                <%end%>
         </div>
 </html>
 

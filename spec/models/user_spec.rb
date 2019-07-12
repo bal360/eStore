@@ -1,4 +1,4 @@
-quire 'rails_helper'
+require 'rails_helper'
 
 describe User do
   before(:each) do
@@ -9,7 +9,7 @@ describe User do
     expect(@user).to be_valid
   end
 
-  it 'has a to_s instance method' do
+  it 'has a full_name instance method' do
     expect(@user.to_s).to eq("Bobby Brown")
   end
 end
