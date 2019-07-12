@@ -6,10 +6,10 @@
             <ul>$<%= product.item.price %></ul>
             <ul><button><%= link_to "Write a Review",  new_review_path(@review)%></button></ul>
             <button><%= link_to "Delete Item",  cart_path(product), method: :delete %></button></div>
+        
         <%end%>
     </div>
 
-<button><%= link_to "Checkout",  "/personalcart/:id", method: :delete %></button>
 
-<h4>Cart Total: $<%= @personalcart.cart_total %></h4>
+<button><%= link_to "Checkout",  "/personalcart/:id", method: :delete %></button>
 
