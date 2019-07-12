@@ -1,24 +1,74 @@
-# README
+# GearUp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## A basic eCommerce site.
 
-Things you may want to cover:
+Project by [@darnold001](https://github.com/darnold001) and [@bal360](https://github.com/bal360)
 
-* Ruby version
+Thanks for checking it out!
 
-* System dependencies
+[Video of app rundown](https://www.youtube.com/embed/0mROs3x2Xoc)
 
-* Configuration
+## Installation
+   1. Clone our repo into the directory where you want the app
+   2. If you have bundler, run a ```bundle install``` in the root folder of the app to install assets
+   3. Open up terminal and run the environment running ```ruby config/environment.rb```
+   4. Have fun!
+   
+   ###### if you don't have bundler or ruby, get it here! [Link to Bundler!](https://bundler.io/), [Link to Ruby!](https://www.ruby-lang.org/en/downloads/)
 
-* Database creation
+## Basic flow of app
 
-* Database initialization
+### Welcome Menu
+   * Create user or hit database for existing user
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+   ![Welcome Menu](./assets/welcome_menu.png)
 
-* Deployment instructions
+### User Menu
+   * Access to Favorites menu
+   * Ability to look up brewery by city or name
 
-* ...
+
+   ![User Menu](./assets/user_menu.png)
+
+### Favorite menu
+   * Ability to see favorite breweries
+   * Lets you query API for up to date information on brewery
+   * Allows you to delete a brewery from database linked to current user
+   * Allows you to delete ALL breweries from both:
+      * the database linked to the user
+      * the associated brewery table
+
+
+   ![Favorites Menu](./assets/favorites_menu.png)
+
+### API Brewery Query
+   * Built method to accept user input and query API for information using either:
+      * City
+      * Name of brewery
+   * After query user is prompted with the choice to save to favorites list
+
+
+   ![Brewery Query](./assets/API_brewery_query.png)
+   ![Add To Favorites Prompt](./assets/add_to_favorites.png)
+
+### Model
+
+   | User |>---------| Favorite Brewery |------------<| Brewery |   
+
+### Assets used:
+   * Ruby
+   * jQuery
+   * Sinatra
+   * ActiveRecord
+   * Sqlite3
+   * JSON
+   * Rake
+   * Rest-Client
+   * Binding.pry
+
+#### Credits
+   * API : thanks to Open Brewery DB for giving open access to their api
+      * created and maintained by Chris J Mears and Wandering Leaf Studios LLC.
+      * [link to API!](https://www.openbrewerydb.org)
+   * Thanks to Flatiron Schools for guided support 
