@@ -14,3 +14,61 @@
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+body {
+    text-align: center;
+    background-color: #BAC798;
+}
+
+form {
+    text-align: center;
+    background-color:#E0D374;
+    padding: 5%;
+    margin: 10%;
+    align-self: center;
+}
+
+ul {
+    padding: 0 0 0 0 ;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+  }
+  
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: burlywood;
+  }
+
+  input[type=submit]:hover {
+    background-color: #F0B0AE;
+    border: 0;
+  }
+
+
+
+

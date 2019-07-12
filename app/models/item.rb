@@ -14,7 +14,4 @@ class Item < ApplicationRecord
        all_item_prices.sum / all_item_prices.count
     end
 
-    
-
-   
 end
