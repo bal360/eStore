@@ -42,7 +42,7 @@ form {
     text-align: center;
     background-color:#E0D374;
     padding: 5%;
-    margin: 10%;
+    margin: 15%;
     align-self: center;
 }
 
@@ -64,10 +64,24 @@ ul {
     background-color: burlywood;
   }
 
-  input[type=submit]:hover {
+  
+  
+input[type=submit] {
     background-color: #F0B0AE;
-    border: 0;
-  }
+    color: #FFFFFF;
+    font-weight: bold; 
+}
+
+input[type=submit]:hover {
+    background-color: #B1D5E8;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #F0B0AE;
+    color: #FFFFFF;
+    font-weight: bold;
+}
 
 
 
