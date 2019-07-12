@@ -9,6 +9,5 @@
     <label><%= f.text_area :description %><label/>
     <label><%=  f.collection_select :item_id, Item.all, :id, :name %><label/>
            <%=  f.hidden_field :user_id, value: @user.id %>
-
     <%= f.submit%><form><label/>
 <%end%>
