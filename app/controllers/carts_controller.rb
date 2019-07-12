@@ -34,6 +34,18 @@ class CartsController < ApplicationController
         end
     end
 
+    def delete
+        @cart.destroy
+        redirect_to personalcart_path
+    end
+
+    def checkout
+        @user.carts.map do |item|
+            item.destroy
+        end
+        redirect_to items_path
+    end
+
     def destroy
         @cart.destroy
         redirect_to personalcart_path
