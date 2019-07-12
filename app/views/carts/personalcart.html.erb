@@ -1,12 +1,13 @@
 <h1> These are the items currently in your cart: </h1>
-
-    <% @personalcart.each do |product| %>
-        <br><ul><img src= <%= product.item.img_url %> width="50" height="91"></ul><br>
-        <ul><%= product.item.name %></ul>
-        <ul>$<%= product.item.price %></ul>
-        <button><%= link_to "Write a Review",  new_review_path(@review)%></button>
-        <br><button><%= link_to "Delete Item",  cart_path(product), method: :delete %></button><br>
-    <br><%end%><br>
+    <div class="grid-container">
+        <% @personalcart.each do |product| %>
+            <div class="grid-item"><img src= <%= product.item.img_url %> width="50" height="91">
+            <ul><%= product.item.name %></ul>
+            <ul>$<%= product.item.price %></ul>
+            <ul><button><%= link_to "Write a Review",  new_review_path(@review)%></button></ul>
+            <button><%= link_to "Delete Item",  cart_path(product), method: :delete %></button></div>
+        <%end%>
+    </div>
 
 <button><%= link_to "Checkout",  "/personalcart/:id", method: :delete %></button>
 

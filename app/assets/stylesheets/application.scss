@@ -92,11 +92,12 @@ input[type=submit]:hover {
     color: #FFFFFF;
 }
 
-button {
-    background-color: rgb(158, 140, 139);
-    color: #FFFFFF;
+button:hover {
+    background-color: white (158, 140, 139);
+    color: pink;
     font-weight: bold;
 }
+
 
 
 
