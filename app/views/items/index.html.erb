@@ -1,10 +1,23 @@
-<h1> All Items: </h1>
-<ul><% @items.each do |item|%>
-    <img src=<%=item.img_url%> 
-        class="w3-round"
-        alt="This is a basic table."
-         width="150"
-        height="191">
-    <br><li><%= link_to item.name, item_path(item) %></li><br>
-    <%end%>
-</ul>
+<!doctype html>
+<html>
+    <h1> Gear Here </h1>
+        
+        <form action="/items" method="get">
+            <label>Search</label>
+            <input type="text" name="search" />
+            <input type="submit" />
+        </form>
+
+        <div class="grid-container">
+            <% @items.each do |item|%>
+                <div class="grid-item"><img src=<%=item.img_url%>
+                        class="w3-round"
+                        alt="This is a basic table."
+                        width="150"
+                        height="191">
+                        <ul><%= link_to item.name, item_path(item), {:style=>'color:#FFFFFF;', :class => "css_class"} %></div></ul>
+                <%end%>
+        </div>
+</html>
+
+    

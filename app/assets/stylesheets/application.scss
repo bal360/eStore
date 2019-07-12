@@ -14,3 +14,90 @@
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+body {
+    text-align: center;
+    background-color: #BAC798;
+}
+
+form {
+    text-align: center;
+    background-color:#E0D374;
+    padding: 5%;
+    margin: 15%;
+    align-self: center;
+}
+
+ul {
+    padding: 0 0 0 0 ;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+  }
+  
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: burlywood;
+  }
+
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+
+  
+  
+input[type=submit] {
+    background-color: #F0B0AE;
+    color: #FFFFFF;
+    font-weight: bold; 
+}
+
+input[type=submit]:hover {
+    background-color: #B1D5E8;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: rgb(158, 140, 139);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+
+

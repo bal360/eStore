@@ -6,6 +6,8 @@ class User < ApplicationRecord
     has_many :carts
     has_many :items, through: :carts
 
+    def full_name
+        self.first_name + " " + self.last_name
 
     def self.username_sort
         ord_usr = User.order(:username)
@@ -17,7 +19,7 @@ class User < ApplicationRecord
 
 
     def self.lastname_sort
-        ord_usr = User.order(:last_name)
+        ord_usr = User.order(:last_name)r
     end
 
 end

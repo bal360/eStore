@@ -10,7 +10,7 @@ Item.destroy_all
 User.destroy_all
 
 
-Item.create(name: "REI Sleeping Bag", price: 399, quantity: 15, img_url: "https://www.rei.com/media/576c4a3f-e653-4d10-a51f-baf170433cf2?size=784x588", description: "All all-season sleeping bag - keeps you warm during winter nights down to 20°F, but still light enough to ensure you don't overheat during the summer months.")
+Item.create(name: "REI Sleeping Bag", price: 399, quantity: 15, img_url: "https://www.rei.com/media/576c4a3f-e653-4d10-a51f-baf170433cf2?size=784x588", description: "All-season sleeping bag - keeps you warm during winter nights down to 20°F, but still light enough to ensure you don't overheat during the summer months.")
 
 Item.create(name: "Coleman Lightweight Sleeping Bag", price: 179, quantity: 25, img_url: "https://images-na.ssl-images-amazon.com/images/I/81rvUytIrdL._SX679_.jpg", description: "This durable Coleman sleeping bag is best suited for warmer winter nights and throughout the summer. With a low temp rating of 40°F this bag is great for the entire family on those quick weekend warrior car-camping trips.")
 
@@ -53,3 +53,11 @@ Item.create(name: "Fire Starter Squares", price: 15, quantity: 30, img_url: "htt
 Item.create(name: "Fire Starters box", price: 35, quantity: 35, img_url: "https://images-na.ssl-images-amazon.com/images/I/71SWxCn-WiL._SL1134_.jpg", description: "This fire-starter box contains wood sticks, eco-friendly wood and wax cubes and fatwood sticks.")
 
 Item.create(name: "100% All Natural Charcoal Fire Starters", price: 15, quantity: 68, img_url: "https://images-na.ssl-images-amazon.com/images/I/71dkn6LUBFL._SL1500_.jpg", description: "These firestarter bundles are eco-friednly and waterproof - ensuring you get a fire going no water the weather. Great for emergency kits.")
+
+Item.create(name: "SOG Backcountry Axe", price: 55, quantity: 55, img_url: "https://www.rei.com/media/88883009-47c8-4ce4-b8c8-fbe60f0a3302", description: "Durable glass-reinforced nylon handle will hold up to the elements. Includes small handle saw to help clear your way through the brush and prepare firewood. Includes sheath.")
+
+Item.create(name: "Ultimate Survival Technologies Tool Set", price: 35, quantity: 35, img_url: "https://www.rei.com/media/7417623f-e5e5-42d1-b6c7-f4c4485d9096?size=2000", description: "This tool kit will have you prepared to brave the wilds the moment you step outside. The set includes a hatchet, a fire starter, a knife, a multi-tool and plenty of cordage.")
+
+Item.create(name: "Ultimate Survival Machete", price: 29, quantity: 29, img_url: "https://www.rei.com/media/d27686e6-44bf-4698-a9da-291cc8893999?size=2000", description: "Ultimate Surival makes high-quality tools to keep you safe in the outdoors. This machete will help you hack your way through the forest while also providing you with some cordage and a fire starter for emergencies.")
+
+Item.create(name: "SOG Hand Axe", price: 45, quantity: 45, img_url: "https://www.rei.com/media/566a2d84-14f2-421d-9b54-2b67703857ac?size=2000", description: "This small hand axe is perfect for small chores around the campsite while not weighing you down while hiking. Sheath included.")

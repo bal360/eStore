@@ -1,17 +1,32 @@
- <h2>Login</h2>
+ <!doctype html>
+   <html>
+      <head>
+         <meta charset="utf-8">
+         <link rel="stylesheet" href="application.scss">
+      </head>
+
+         <body>
+           
  
- <% if @error %>
-    <p style="color: red;"> <%= @error %> </p>
- <% end %>
+            <h2>Login</h2>
+            
+               <% if @error %>
+                  <p style="color: red;"> <%= @error %> </p>
+               <% end %>
 
- <%= form_for @user, url: {controller: "sessions", action: "create"} do |f| %>
- <%= f.label :username %>
- <%= f.text_field :username %>
- 
- <%= f.label :password %>
- <%= f.password_field :password %>
+               <%= form_for @user, url: {controller: "sessions", action: "create"} do |f| %>
+               <%= f.label :username %>
+               <%= f.text_field :username %>
+               
+               <%= f.label :password %>
+               <%= f.password_field :password %>
 
- <%= f.submit "Login" %>
+               <%= f.submit "Login" %>
 
- <% end %>
+               <% end %>
+
+            
+
+         </body>
+ </html>
 
