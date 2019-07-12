@@ -11,36 +11,39 @@ Thanks for checking it out!
 ## Installation
    1. Clone our repo into the directory where you want the app
    2. If you have bundler, run a ```bundle install``` in the root folder of the app to install assets
-   3. Open up terminal and run the environment running ```ruby config/environment.rb```
-   4. Have fun!
    
    ###### if you don't have bundler or ruby, get it here! [Link to Bundler!](https://bundler.io/), [Link to Ruby!](https://www.ruby-lang.org/en/downloads/)
 
 ## Basic flow of app
 
-### Welcome Menu
-   * Create user or hit database for existing user
+### Create Profile Menu
+   * Create user account
+   (./)
 
+### Login Menu
+   * Login with recently created account
 
-   ![Welcome Menu](./assets/welcome_menu.png)
+   ![Login Menu](./login)
 
-### User Menu
-   * Access to Favorites menu
-   * Ability to look up brewery by city or name
+### Gear Page
+   * All available items to add to your cart.
+   * Ability to look up item by name.
+   ![items Menu](./items)
 
+### Item Details Page
+   * Shows description of the selected item.
+   * Shows the price of the selected item.
+   * Allows you to add the item to your user cart.
 
-   ![User Menu](./assets/user_menu.png)
+   ![Item Detail Page](./items/##)
 
-### Favorite menu
-   * Ability to see favorite breweries
-   * Lets you query API for up to date information on brewery
-   * Allows you to delete a brewery from database linked to current user
-   * Allows you to delete ALL breweries from both:
-      * the database linked to the user
-      * the associated brewery table
+### User Cart Page
+   * Shows all items within the users cart.
+   * Gives the user the option to "Write a Review".
+   * Allows the user to "Delete Item" within their cart.
+   * Gives the user the option to "Checkout"
 
-
-   ![Favorites Menu](./assets/favorites_menu.png)
+   ![User Cart Page](./personalcart)
 
 ### API Brewery Query
    * Built method to accept user input and query API for information using either:
@@ -58,17 +61,18 @@ Thanks for checking it out!
 
 ### Assets used:
    * Ruby
-   * jQuery
-   * Sinatra
+   * Ruby on Rails
    * ActiveRecord
-   * Sqlite3
-   * JSON
-   * Rake
+   * PostGresSQL
    * Rest-Client
+   * ByeBug
    * Binding.pry
+   * Capybara
+   * Database Cleaner
+   * Bootstrap
+   * rSpec
+   * BootSnap
+   * Launchy
 
 #### Credits
-   * API : thanks to Open Brewery DB for giving open access to their api
-      * created and maintained by Chris J Mears and Wandering Leaf Studios LLC.
-      * [link to API!](https://www.openbrewerydb.org)
    * Thanks to Flatiron Schools for guided support 
