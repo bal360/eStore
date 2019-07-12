@@ -2,13 +2,13 @@ class ItemsController < ApplicationController
   before_action :find, only: [:show, :edit, :update, :delete]
     
   
-    def index 
-      if params[:search]
-        @items = Item.where("name LIKE ?", "%#{params[:search]}%")
-      else
-        @items = Item.all
-      end
+  def index 
+    if params[:search]
+      @items = Item.where("name LIKE ?", "%#{params[:search]}%")
+    else
+      @items = Item.all
     end
+  end
 
   def create
       new

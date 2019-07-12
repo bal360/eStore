@@ -1,7 +1,6 @@
 <h1>Hi <%= @user.first_name%>, here are all of the reviews: </h1>
-
-<ul><%= @reviews.each do |review| %>
-    <li><%= review.title %></li>
-    <li><%= review.rating %></li>
-    <li><img src = <%=review.item.img_url%> width="50" height="91"></li>
+    <ul><%= @reviews.each do |review| %>
+        <li><%= review.title %></li>
+        <li><%= review.rating %></li>
+        <li><img src = <%=review.item.img_url%> width="50" height="91"></li>
     <% end %></ul>

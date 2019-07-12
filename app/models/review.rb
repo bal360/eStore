@@ -32,9 +32,6 @@ class Review < ApplicationRecord
         ord_usr = Review.order(:rating)
         binding.pry
     end
-
-
-
 end
 
 

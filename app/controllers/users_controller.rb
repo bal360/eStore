@@ -21,7 +21,6 @@ before_action :find, only: [:show, :edit, :update, :delete]
     end
 
     def edit
-        
     end
     
     def update
