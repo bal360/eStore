@@ -18,23 +18,19 @@ Thanks for checking it out!
 
 ### Create Profile Menu
    * Create user account
-   (./)
+ 
 
 ### Login Menu
    * Login with recently created account
-   ![Login Menu](./login)
 
 ### Gear Page
    * All available items to add to your cart.
    * Ability to look up item by name.
-   ![items Menu](./items)
 
 ### Item Details Page
    * Shows description of the selected item.
    * Shows the price of the selected item.
    * Allows you to add the item to your user cart.
-
-   ![Item Detail Page](./items/##)
 
 ### User Cart Page
    * Shows all items within the users cart.
@@ -42,19 +38,12 @@ Thanks for checking it out!
    * Allows the user to "Delete Item" within their cart.
    * Gives the user the option to "Checkout"
 
-   ![User Cart Page](./personalcart)
-
 ### Reviews Page
    * Ability to see reviews of items
-   
-   ![Reviews Menu](./reviews/#)
 
 ### Profile Page
    * Shows all user information entered at signup
    * Ability to update user information
-   
-   ![Profile Page](./assets/users/#)
-   ![Update Profile Page](./users/#/edit)
 
 ### Models
 
