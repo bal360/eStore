@@ -22,7 +22,6 @@ Thanks for checking it out!
 
 ### Login Menu
    * Login with recently created account
-
    ![Login Menu](./login)
 
 ### Gear Page
@@ -45,20 +44,24 @@ Thanks for checking it out!
 
    ![User Cart Page](./personalcart)
 
-### API Brewery Query
-   * Built method to accept user input and query API for information using either:
-      * City
-      * Name of brewery
-   * After query user is prompted with the choice to save to favorites list
+### Reviews Page
+   * Ability to see reviews of items
+   
+   ![Reviews Menu](./reviews/#)
 
+### Profile Page
+   * Shows all user information entered at signup
+   * Ability to update user information
+   
+   ![Profile Page](./assets/users/#)
+   ![Update Profile Page](./users/#/edit)
 
-   ![Brewery Query](./assets/API_brewery_query.png)
-   ![Add To Favorites Prompt](./assets/add_to_favorites.png)
+### Models
 
-### Model
-
-   | User |>---------| Favorite Brewery |------------<| Brewery |   
-
+   | User |>---------| Cart |------------<| Item |   
+   
+   | User |>---------| Review |------------<| Item |   
+   
 ### Assets used:
    * Ruby
    * Ruby on Rails
