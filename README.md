@@ -21,41 +21,24 @@ Thanks for checking it out!
 ### Welcome Menu
    * Create user or hit database for existing user
 
+### Reviews Page
+   * Ability to see reviews of items
+   
+   ![Reviews Menu](./reviews/#)
 
-   ![Welcome Menu](./assets/welcome_menu.png)
+### Profile Page
+   * Shows all user information entered at signup
+   * Ability to update user information
 
-### User Menu
-   * Access to Favorites menu
-   * Ability to look up brewery by city or name
+   ![Profile Page](./assets/users/#)
+   ![Update Profile Page](./users/#/edit)
 
+### Models
 
-   ![User Menu](./assets/user_menu.png)
-
-### Favorite menu
-   * Ability to see favorite breweries
-   * Lets you query API for up to date information on brewery
-   * Allows you to delete a brewery from database linked to current user
-   * Allows you to delete ALL breweries from both:
-      * the database linked to the user
-      * the associated brewery table
-
-
-   ![Favorites Menu](./assets/favorites_menu.png)
-
-### API Brewery Query
-   * Built method to accept user input and query API for information using either:
-      * City
-      * Name of brewery
-   * After query user is prompted with the choice to save to favorites list
-
-
-   ![Brewery Query](./assets/API_brewery_query.png)
-   ![Add To Favorites Prompt](./assets/add_to_favorites.png)
-
-### Model
-
-   | User |>---------| Favorite Brewery |------------<| Brewery |   
-
+   | User |>---------| Cart |------------<| Item |   
+   
+   | User |>---------| Review |------------<| Item |   
+   
 ### Assets used:
    * Ruby
    * jQuery
@@ -68,7 +51,4 @@ Thanks for checking it out!
    * Binding.pry
 
 #### Credits
-   * API : thanks to Open Brewery DB for giving open access to their api
-      * created and maintained by Chris J Mears and Wandering Leaf Studios LLC.
-      * [link to API!](https://www.openbrewerydb.org)
    * Thanks to Flatiron Schools for guided support 
