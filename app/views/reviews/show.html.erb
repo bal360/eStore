@@ -1,15 +1,16 @@
 <h2>Hi <%= @user.first_name%>, here are your reviews:<h/2>
+<br>
+ <ul><% @reviews.each do |review| %>
+    <li><%= review.item.name %></li><br>
+    <li><img src= <%= review.item.img_url%> width="150" height="191"></li>
+    <li>Review Title: <%= review.title %></li>
+    <li>Rating (1-5): <%= review.rating %></li>
+    <li>Review: <%= review.description %></li><br>
+    <%= "-----------------------------------------------------" %>
+    <br>
+    <% end %></ul>
 
 
-
- <% @reviews.each do |review| %>
-    <%= review.title %>
-    <%= review.rating %>
-    <%= review.description %>
-
-    <% end %>
-
-
-
+   
 
     
