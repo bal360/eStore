@@ -6,7 +6,7 @@ Project by [@darnold001](https://github.com/darnold001) and [@bal360](https://gi
 
 Thanks for checking it out!
 
-[Video of app rundown](https://www.youtube.com/embed/0mROs3x2Xoc)
+[Video of app rundown](https://youtu.be/4ja_QYo4Llo)
 
 ## Installation
    1. Clone our repo into the directory where you want the app
